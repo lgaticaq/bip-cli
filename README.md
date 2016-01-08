@@ -19,6 +19,8 @@ npm i -g bip-cli
 ```bash
 bip 11111111
 
-Saldo: 1000
+Número: 11111111
+Saldo: $1000
 Fecha de Saldo: 03/01/2016 20:20
+Mensaje: Tarjeta Valida
 ```
