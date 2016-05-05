@@ -7,18 +7,19 @@ const bip = require('bip');
 const moment = require('moment');
 const pkg = require('../package.json');
 const updateNotifier = require('update-notifier');
+const chalk = require('chalk');
 
 updateNotifier({pkg}).notify();
 
-const getBalance = (number) => {
-  bip(number).then((data) => {
-    console.log(`Número: ${data.number}`);
-    console.log(`Saldo: $${data.balance}`);
+const getBalance = number => {
+  bip(number).then(data => {
+    console.log(chalk.green(`Número: ${data.number}`));
+    console.log(chalk.green(`Saldo: $${data.balance}`));
     if (data.date) {
-      console.log(`Fecha de saldo: ${moment(data.date).format('DD/MM/YYYY HH:mm')}`);
+      console.log(chalk.green(`Fecha de saldo: ${moment(data.date).format('DD/MM/YYYY HH:mm')}`));
     }
-    console.log(`Mensaje: ${data.message}`);
-  }).catch((err) => console.log(err.message));
+    console.log(chalk.green(`Mensaje: ${data.message}`));
+  }).catch(err => console.log(chalk.red(err.message)));
 };
 
 program
