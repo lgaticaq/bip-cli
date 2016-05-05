@@ -6,6 +6,9 @@ const program = require('commander');
 const bip = require('bip');
 const moment = require('moment');
 const pkg = require('../package.json');
+const updateNotifier = require('update-notifier');
+
+updateNotifier({pkg}).notify();
 
 const getBalance = (number) => {
   bip(number).then((data) => {

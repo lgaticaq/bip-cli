@@ -32,7 +32,8 @@
   "dependencies": {
     "bip": "^2.0.0",
     "commander": "^2.9.0",
-    "moment": "^2.13.0"
+    "moment": "^2.13.0",
+    "update-notifier": "^0.7.0"
   },
   "devDependencies": {
     "eslint": "^2.9.0"
