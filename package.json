@@ -7,7 +7,7 @@
     "prepublish": "eslint src"
   },
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4"
   },
   "bin": {
     "bip": "src/index.js"
