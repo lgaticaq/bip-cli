@@ -4,11 +4,7 @@
   "description": "Get balance of bip card (Chile) CLI",
   "main": "lib",
   "scripts": {
-    "prepublish": "npm run build -s",
-    "prebuild": "npm run lint -s && npm run clean -s",
-    "build": "babel src --out-dir lib --source-maps",
-    "lint": "eslint src",
-    "clean": "rimraf lib"
+    "prepublish": "eslint src"
   },
   "engines": {
     "node": ">=0.12"
@@ -39,11 +35,7 @@
     "moment": "^2.11.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.4.0",
-    "babel-core": "^6.4.0",
-    "babel-preset-es2015": "^6.3.13",
-    "eslint": "^1.10.3",
-    "rimraf": "^2.5.0"
+    "eslint": "^1.10.3"
   },
   "eslintConfig": {
     "rules": {
@@ -76,10 +68,5 @@
       "mocha": true
     },
     "extends": "eslint:recommended"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   }
 }
