@@ -2,10 +2,10 @@
 
 'use strict';
 
-import program from 'commander';
-import bip from 'bip';
-import moment from 'moment';
-import pkg from '../package.json';
+const program = require('commander');
+const bip = require('bip');
+const moment = require('moment');
+const pkg = require('../package.json');
 
 const getBalance = (number) => {
   bip(number).then((data) => {
