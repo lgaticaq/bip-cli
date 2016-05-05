@@ -30,26 +30,31 @@
   },
   "homepage": "https://github.com/lgaticaq/bip-cli#readme",
   "dependencies": {
-    "bip": "^1.2.1",
+    "bip": "^2.0.0",
     "commander": "^2.9.0",
-    "moment": "^2.11.0"
+    "moment": "^2.13.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^2.9.0"
   },
   "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
     "rules": {
       "indent": [
         2,
         2
       ],
-      "quotes": [
-        2,
-        "single"
-      ],
       "linebreak-style": [
         2,
         "unix"
+      ],
+      "quotes": [
+        2,
+        "single"
       ],
       "semi": [
         2,
@@ -58,15 +63,6 @@
       "no-console": [
         0
       ]
-    },
-    "ecmaFeatures": {
-      "modules": true
-    },
-    "env": {
-      "es6": true,
-      "node": true,
-      "mocha": true
-    },
-    "extends": "eslint:recommended"
+    }
   }
 }
