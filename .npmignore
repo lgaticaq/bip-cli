@@ -1,1 +1,7 @@
+.git
 node_modules
+.editorconfig
+.gitignore
+.nvmrc
+CHANGELOG.md
+yarn.lock
