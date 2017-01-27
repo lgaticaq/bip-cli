@@ -1,3 +1,10 @@
+#### 2.0.2 (2017-1-26)
+
+##### Chores
+
+* **package:** Update dependencies ([22ec8298](https://github.com/lgaticaq/bip-cli/commit/22ec8298145d7947e2af8b39def82d4009a90f9a))
+* **npm:** Update ignore ([0546ad2e](https://github.com/lgaticaq/bip-cli/commit/0546ad2e7e7bc1eebf6014f21d8fa6bc897088c1))
+
 #### 2.0.1 (2016-12-18)
 
 ##### Chores
