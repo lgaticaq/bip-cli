@@ -1,3 +1,22 @@
+#### 2.0.3 (2017-3-26)
+
+##### Chores
+
+* **package:**
+  * Upgrade eslint to version 3.18.0 ([b5649610](https://github.com/lgaticaq/bip-cli/commit/b56496105d7d697626745565983e002d534c565e))
+  * Upgrade update-notifier to version 2.1.0 ([ac6c0feb](https://github.com/lgaticaq/bip-cli/commit/ac6c0feb2d96edb2b7b28ba6d70cd4883d55c39d))
+  * Upgrade date-fns to version 1.28.1 ([eea9243c](https://github.com/lgaticaq/bip-cli/commit/eea9243c5815e70cf679fc8b44d6167afd1ad45d))
+  * update eslint to version 3.15.0 ([b89c7e55](https://github.com/lgaticaq/bip-cli/commit/b89c7e558842361d7dc784d42eff9e099b7e76b6))
+* **nvm:** Update node version to v7 ([93c34682](https://github.com/lgaticaq/bip-cli/commit/93c34682dc20228357f5c36e8369cc234a10d1f0))
+
+##### Documentation Changes
+
+* **LICENSE:** Update year ([fcc4366d](https://github.com/lgaticaq/bip-cli/commit/fcc4366d90a41c1f7eef236ea13e006e99516d54))
+
+##### Bug Fixes
+
+* **package:** update update-notifier to version 2.0.0 ([271e8962](https://github.com/lgaticaq/bip-cli/commit/271e896212d49d64c501ff2f1206afc5676dbcba))
+
 #### 2.0.2 (2017-1-26)
 
 ##### Chores
