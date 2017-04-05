@@ -4,7 +4,6 @@
 
 const program = require('commander');
 const bip = require('bip');
-const format = require('date-fns/format');
 const pkg = require('../package.json');
 const updateNotifier = require('update-notifier');
 const chalk = require('chalk');
@@ -16,7 +15,11 @@ const getBalance = number => {
     console.log(chalk.green(`Número: ${data.number}`));
     console.log(chalk.green(`Saldo: $${data.balance}`));
     if (data.date) {
-      console.log(chalk.green(`Fecha de saldo: ${format(data.date, 'DD/MM/YYYY HH:mm')}`));
+      const pattern = /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):\d{2}\.\d+Z/;
+      let hour = data.date.toISOString().replace(pattern, '$4') - 3;
+      if (hour < 10) hour = `0${hour}`;
+      const date = data.date.toISOString().replace(pattern, `$3/$2/$1 ${hour}:$5`);
+      console.log(chalk.green(`Fecha de saldo: ${date}`));
     }
     console.log(chalk.green(`Mensaje: ${data.message}`));
   }).catch(err => console.log(chalk.red(err.message)));
