@@ -1,3 +1,11 @@
+#### 2.0.4 (2017-4-4)
+
+##### Chores
+
+* **package:**
+  * Upgrade eslint to version 3.19.0 ([1be32f78](https://github.com/lgaticaq/bip-cli/commit/1be32f788839660ad444832d9ef7b008f4e924ee))
+  * Remove date-fns ([e7b5b6cd](https://github.com/lgaticaq/bip-cli/commit/e7b5b6cdebcb5509997145a2bfbc45b87a809004))
+
 #### 2.0.3 (2017-3-26)
 
 ##### Chores
