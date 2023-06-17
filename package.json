@@ -35,7 +35,7 @@
   "dependencies": {
     "bip": "^2.0.1",
     "chalk": "^2.0.0",
-    "commander": "^2.9.0",
+    "commander": "^11.0.0",
     "update-notifier": "^2.1.0"
   },
   "devDependencies": {
